@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import statis org.junit.Assert.*;
+import static org.junit.Assert.*;
 import static org.pringframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.pringframework.test.web.servlet.result.MockMvcRequestMatchers.content;
 import static org.pringframework.test.web.servlet.result.MockMvcRequestMatchers.status;
@@ -27,7 +27,7 @@ public class HelloControllerTest {
 
 	@Test
 	public void shouldGetHello() throws Exception {
-		this.mvc.perform(get("/")).andExpect(status().isOk)).andExpect(content().string("hello"));
+		this.mvc.perform(get("/")).andExpect(status().isOk).andExpect(content().string("hello"));
 	}
 
 }
