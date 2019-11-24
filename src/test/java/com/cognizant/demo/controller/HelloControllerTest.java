@@ -13,7 +13,7 @@ public class HelloControllerTest {
   
   @Test
   public void shouldAlwaysPass() {
-     assertTrue(true);
+     //assertTrue(true);
   }
 
 }
